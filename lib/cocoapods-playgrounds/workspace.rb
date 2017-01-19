@@ -77,7 +77,7 @@ module Pod
 
     def workspace_path
       extension = @tool == :cocoapods ? 'xcworkspace' : 'xcodeproj'
-      "#{names.first}.#{extension}"
+      target_dir + "#{names.first}.#{extension}"
     end
 
     def potential_cartfile
